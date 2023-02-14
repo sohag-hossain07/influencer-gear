@@ -1,0 +1,55 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500;700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+/* css variables */
+:root {
+  --primary-color: #e02c6d;
+  --secondary-color: #3a3a3a;
+}
+
+/* utilities */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 200ms;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+
+*/
