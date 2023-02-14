@@ -1,13 +1,83 @@
+/* common style for small and medium screen */
+@media screen and (max-width: 991px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-info {
+    order: 1;
+    margin-top: 50px;
+  }
+
+  .company-logo {
+    padding: 10px 0;
+  }
+
+  .blog {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blog > img {
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 17px;
+  }
+}
+
 /* extra small screen */
 @media screen and (max-width: 575px) {
+  .banner-image img {
+    max-width: 450px;
+  }
+
+  .sponsor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .popular-collection {
+    grid-template-columns: 1fr;
+  }
+
+  .show-more {
+    margin-top: 35px;
+  }
 }
 
 /* small screen */
 @media screen and (min-width: 576px) and (max-width: 767px) {
+  .banner-info {
+    padding-top: 50px;
+  }
+
+  .sponsor {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .popular-collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* medium screen */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-info {
+    padding: 50px 0 70px 0;
+  }
+
+  .sponsor {
+    max-width: 850px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .popular-collection {
+    max-width: 850px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ==================================================================== 
@@ -16,6 +86,9 @@
 
 /* large screen */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog {
+    gap: 70px;
+  }
 }
 
 /* extra large screen */
